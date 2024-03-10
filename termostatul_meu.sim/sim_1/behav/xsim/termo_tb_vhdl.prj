@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../termostatul_meu.srcs/sources_1/new/Debouncer.vhd" \
+"../../../../termostatul_meu.srcs/sources_1/new/Main.vhd" \
+"../../../../../../proiect/Memorie_RAM_.vhd" \
+"../../../../termostatul_meu.srcs/sources_1/new/Set_Temp.vhd" \
+"../../../../termostatul_meu.srcs/sources_1/new/Sim_unit.vhd" \
+"../../../../termostatul_meu.srcs/sources_1/new/Thermostat.vhd" \
+"../../../../termostatul_meu.srcs/sources_1/new/Tram_to_ssd.vhd" \
+"../../../../../../proiect/TransORA_AdresaRAM.vhd" \
+"../../../../../../proiect/Transf_TEMP5B_in_4SI4.vhd" \
+"../../../../../../proiect/afisorbcd.vhd" \
+"../../../../../../proiect/clk_div.vhd" \
+"../../../../../../proiect/digital_clockv2.vhd" \
+"../../../../termostatul_meu.srcs/sources_1/new/div_deb.vhd" \
+"../../../../termostatul_meu.srcs/sim_1/new/termo_tb.vhd" \
+
+# Do not sort compile order
+nosort

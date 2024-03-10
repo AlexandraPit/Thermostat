@@ -1,0 +1,19 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Alexandra/Downloads/Week3/Nexys4.vhd,1679330948,vhdl,,,,nexys4,,,,,,,,
+D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sim_1/new/termo_tb.vhd,1684417385,vhdl,,,,termo_tb,,,,,,,,
+D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Debouncer.vhd,1684355022,vhdl,,,,debouncer,,,,,,,,
+D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd,1684413327,vhdl,,,,main,,,,,,,,
+D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd,1684347944,vhdl,,,,set_temp,,,,,,,,
+D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Sim_unit.vhd,1684349584,vhdl,,,,sim_unit,,,,,,,,
+D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Thermostat.vhd,1683907342,vhdl,,,,thermostat,,,,,,,,
+D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Tram_to_ssd.vhd,1684354498,vhdl,,,,tram_to_ssd,,,,,,,,
+D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/div_deb.vhd,1684345613,vhdl,,,,clk_divider,,,,,,,,
+D:/an1 sem2/DSD/proiect/Memorie_RAM_.vhd,1680005129,vhdl,,,,memorie_ram,,,,,,,,
+D:/an1 sem2/DSD/proiect/TransORA_AdresaRAM.vhd,1680005133,vhdl,,,,transfora_adresaram,,,,,,,,
+D:/an1 sem2/DSD/proiect/Transf_TEMP5B_in_4SI4.vhd,1683907075,vhdl,,,,transf5to4,,,,,,,,
+D:/an1 sem2/DSD/proiect/afisorbcd.vhd,1683829539,vhdl,,,,seven_segment_display,,,,,,,,
+D:/an1 sem2/DSD/proiect/clk_div.vhd,1680005123,vhdl,,,,clk_div,,,,,,,,
+D:/an1 sem2/DSD/proiect/digital_clockv2.vhd,1680005125,vhdl,,,,digital_clockv2,,,,,,,,

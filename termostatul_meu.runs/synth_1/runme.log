@@ -1,0 +1,365 @@
+
+*** Running vivado
+    with args -log Main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source Main.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 377.570 ; gain = 45.039
+Command: read_checkpoint -auto_incremental -incremental {D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/utils_1/imports/synth_1/Main.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/utils_1/imports/synth_1/Main.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14144
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1206.898 ; gain = 409.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Main' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:18]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'D:/an1 sem2/DSD/proiect/clk_div.vhd:4' bound to instance 'U1' of component 'clk_div' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [D:/an1 sem2/DSD/proiect/clk_div.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (0#1) [D:/an1 sem2/DSD/proiect/clk_div.vhd:10]
+INFO: [Synth 8-3491] module 'digital_clockv2' declared at 'D:/an1 sem2/DSD/proiect/digital_clockv2.vhd:5' bound to instance 'U2' of component 'digital_clockv2' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'digital_clockv2' [D:/an1 sem2/DSD/proiect/digital_clockv2.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'digital_clockv2' (0#1) [D:/an1 sem2/DSD/proiect/digital_clockv2.vhd:18]
+INFO: [Synth 8-3491] module 'TransfORA_AdresaRAM' declared at 'D:/an1 sem2/DSD/proiect/TransORA_AdresaRAM.vhd:5' bound to instance 'U3' of component 'TransfORA_AdresaRAM' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'TransfORA_AdresaRAM' [D:/an1 sem2/DSD/proiect/TransORA_AdresaRAM.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'TransfORA_AdresaRAM' (0#1) [D:/an1 sem2/DSD/proiect/TransORA_AdresaRAM.vhd:11]
+INFO: [Synth 8-3491] module 'MEMORIE_RAM' declared at 'D:/an1 sem2/DSD/proiect/Memorie_RAM_.vhd:6' bound to instance 'U4' of component 'MEMORIE_RAM' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'MEMORIE_RAM' [D:/an1 sem2/DSD/proiect/Memorie_RAM_.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'MEMORIE_RAM' (0#1) [D:/an1 sem2/DSD/proiect/Memorie_RAM_.vhd:17]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Debouncer.vhd:7' bound to instance 'U5' of component 'Debouncer' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Debouncer.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (0#1) [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Debouncer.vhd:16]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Debouncer.vhd:7' bound to instance 'U6' of component 'Debouncer' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:215]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Debouncer.vhd:7' bound to instance 'U7' of component 'Debouncer' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:219]
+INFO: [Synth 8-3491] module 'Set_Temp' declared at 'D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:7' bound to instance 'U8' of component 'Set_Temp' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'Set_Temp' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:19]
+WARNING: [Synth 8-614] signal 'Ora_5biti' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:24]
+WARNING: [Synth 8-614] signal 'T_RAM' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:24]
+WARNING: [Synth 8-614] signal 'Set_hour' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:24]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:24]
+WARNING: [Synth 8-614] signal 'Hours' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:24]
+WARNING: [Synth 8-614] signal 'Tmin' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:24]
+WARNING: [Synth 8-614] signal 'Tmax' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:24]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Set_Temp' (0#1) [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:19]
+INFO: [Synth 8-3491] module 'Sim_unit' declared at 'D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Sim_unit.vhd:7' bound to instance 'U9' of component 'Sim_unit' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'Sim_unit' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Sim_unit.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Sim_unit' (0#1) [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Sim_unit.vhd:16]
+INFO: [Synth 8-3491] module 'Thermostat' declared at 'D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Thermostat.vhd:6' bound to instance 'U10' of component 'Thermostat' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:240]
+INFO: [Synth 8-638] synthesizing module 'Thermostat' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Thermostat.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Thermostat' (0#1) [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Thermostat.vhd:15]
+INFO: [Synth 8-3491] module 'Tram_to_ssd' declared at 'D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Tram_to_ssd.vhd:9' bound to instance 'U11' of component 'Tram_to_ssd' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'Tram_to_ssd' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Tram_to_ssd.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Tram_to_ssd' (0#1) [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Tram_to_ssd.vhd:17]
+INFO: [Synth 8-3491] module 'transf5to4' declared at 'D:/an1 sem2/DSD/proiect/Transf_TEMP5B_in_4SI4.vhd:5' bound to instance 'U12' of component 'transf5to4' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'transf5to4' [D:/an1 sem2/DSD/proiect/Transf_TEMP5B_in_4SI4.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'transf5to4' (0#1) [D:/an1 sem2/DSD/proiect/Transf_TEMP5B_in_4SI4.vhd:11]
+INFO: [Synth 8-3491] module 'transf5to4' declared at 'D:/an1 sem2/DSD/proiect/Transf_TEMP5B_in_4SI4.vhd:5' bound to instance 'U13' of component 'transf5to4' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:250]
+INFO: [Synth 8-3491] module 'transf5to4' declared at 'D:/an1 sem2/DSD/proiect/Transf_TEMP5B_in_4SI4.vhd:5' bound to instance 'U14' of component 'transf5to4' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:253]
+INFO: [Synth 8-3491] module 'transf5to4' declared at 'D:/an1 sem2/DSD/proiect/Transf_TEMP5B_in_4SI4.vhd:5' bound to instance 'U15' of component 'transf5to4' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:256]
+INFO: [Synth 8-3491] module 'Tram_to_ssd' declared at 'D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Tram_to_ssd.vhd:9' bound to instance 'U16' of component 'Tram_to_ssd' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:260]
+INFO: [Synth 8-3491] module 'transf5to4' declared at 'D:/an1 sem2/DSD/proiect/Transf_TEMP5B_in_4SI4.vhd:5' bound to instance 'U17' of component 'transf5to4' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:261]
+INFO: [Synth 8-3491] module 'transf5to4' declared at 'D:/an1 sem2/DSD/proiect/Transf_TEMP5B_in_4SI4.vhd:5' bound to instance 'U18' of component 'transf5to4' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:264]
+INFO: [Synth 8-3491] module 'seven_segment_display' declared at 'D:/an1 sem2/DSD/proiect/afisorbcd.vhd:6' bound to instance 'U19' of component 'seven_segment_display' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:269]
+INFO: [Synth 8-638] synthesizing module 'seven_segment_display' [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:28]
+WARNING: [Synth 8-614] signal 'H_toset_zeci' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+WARNING: [Synth 8-614] signal 'H_toset_unitati' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+WARNING: [Synth 8-614] signal 'Tmin_zeci' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+WARNING: [Synth 8-614] signal 'Tmin_unitati' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+WARNING: [Synth 8-614] signal 'Tmax_zeci' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+WARNING: [Synth 8-614] signal 'Tmax_unitati' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+WARNING: [Synth 8-614] signal 'Hin_zeci' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+WARNING: [Synth 8-614] signal 'Hin_unitati' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+WARNING: [Synth 8-614] signal 'Min_zeci' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+WARNING: [Synth 8-614] signal 'Min_unitati' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+WARNING: [Synth 8-614] signal 'Temp_zeci' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+WARNING: [Synth 8-614] signal 'Temp_unitati' is read in the process but is not in the sensitivity list [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment_display' (0#1) [D:/an1 sem2/DSD/proiect/afisorbcd.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'Main' (0#1) [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Main.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1304.828 ; gain = 507.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1304.828 ; gain = 507.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1304.828 ; gain = 507.586
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1304.828 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/an1 sem2/DSD/proiect/nexys4_CONSTRAINTS.xdc]
+Finished Parsing XDC File [D:/an1 sem2/DSD/proiect/nexys4_CONSTRAINTS.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/an1 sem2/DSD/proiect/nexys4_CONSTRAINTS.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1365.383 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1365.383 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 1365.383 ; gain = 568.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 1365.383 ; gain = 568.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 1365.383 ; gain = 568.141
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'ORA_5BIT_reg' [D:/an1 sem2/DSD/proiect/TransORA_AdresaRAM.vhd:19]
+WARNING: [Synth 8-327] inferring latch for variable 'Hours_reg' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:28]
+WARNING: [Synth 8-327] inferring latch for variable 'Tmax_reg' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:29]
+WARNING: [Synth 8-327] inferring latch for variable 'Tmin_reg' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:30]
+WARNING: [Synth 8-327] inferring latch for variable 'count_reg' [D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.srcs/sources_1/new/Set_Temp.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'Zeci_reg' [D:/an1 sem2/DSD/proiect/Transf_TEMP5B_in_4SI4.vhd:19]
+WARNING: [Synth 8-327] inferring latch for variable 'Unitati_reg' [D:/an1 sem2/DSD/proiect/Transf_TEMP5B_in_4SI4.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1365.383 ; gain = 568.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 8     
+	   2 Input    4 Bit       Adders := 13    
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 25    
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 28    
+	   6 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 14    
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 6     
+	  11 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 1     
+	  26 Input    1 Bit        Muxes := 25    
+	   2 Input    1 Bit        Muxes := 34    
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (U12/Zeci_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U12/Zeci_reg[2]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U12/Zeci_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U12/Zeci_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U12/Unitati_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U12/Unitati_reg[2]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U12/Unitati_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U12/Unitati_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U13/Zeci_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U13/Zeci_reg[2]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U13/Zeci_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U13/Zeci_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U13/Unitati_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U13/Unitati_reg[2]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U13/Unitati_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U13/Unitati_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U14/Zeci_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U15/Zeci_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U17/Zeci_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U18/Zeci_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U14/Zeci_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U14/Zeci_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U14/Unitati_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U14/Unitati_reg[2]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U14/Unitati_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U14/Unitati_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U15/Zeci_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U15/Zeci_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U15/Unitati_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U15/Unitati_reg[2]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U15/Unitati_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U15/Unitati_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U17/Zeci_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U17/Zeci_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U17/Unitati_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U17/Unitati_reg[2]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U17/Unitati_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U17/Unitati_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U18/Zeci_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U18/Zeci_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U18/Unitati_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U18/Unitati_reg[2]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U18/Unitati_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (U18/Unitati_reg[0]) is unused and will be removed from module Main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:05 . Memory (MB): peak = 1365.383 ; gain = 568.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:20 . Memory (MB): peak = 1365.383 ; gain = 568.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:25 . Memory (MB): peak = 1371.746 ; gain = 574.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:26 . Memory (MB): peak = 1381.840 ; gain = 584.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:37 . Memory (MB): peak = 1381.840 ; gain = 584.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:37 . Memory (MB): peak = 1381.840 ; gain = 584.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:37 . Memory (MB): peak = 1381.840 ; gain = 584.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:37 . Memory (MB): peak = 1381.840 ; gain = 584.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:37 . Memory (MB): peak = 1381.840 ; gain = 584.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:37 . Memory (MB): peak = 1381.840 ; gain = 584.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    65|
+|3     |LUT1   |     6|
+|4     |LUT2   |   277|
+|5     |LUT3   |    56|
+|6     |LUT4   |    45|
+|7     |LUT5   |    33|
+|8     |LUT6   |   147|
+|9     |MUXF7  |    21|
+|10    |MUXF8  |     6|
+|11    |FDCE   |   113|
+|12    |FDPE   |     1|
+|13    |FDRE   |   283|
+|14    |LD     |    22|
+|15    |IBUF   |     6|
+|16    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:37 . Memory (MB): peak = 1381.840 ; gain = 584.598
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:30 . Memory (MB): peak = 1381.840 ; gain = 524.043
+Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:38 . Memory (MB): peak = 1381.840 ; gain = 584.598
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1385.668 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 114 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1389.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  LD => LDCE: 22 instances
+
+Synth Design complete, checksum: 664e21cb
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 72 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:50 . Memory (MB): peak = 1389.352 ; gain = 986.914
+INFO: [Common 17-1381] The checkpoint 'D:/an1 sem2/DSD/proiect termostat/termostatul_meu/termostatul_meu.runs/synth_1/Main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 31 12:58:07 2023...

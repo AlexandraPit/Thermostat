@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Nexys4_behav" "xil_defaultlib.Nexys4" -log "elaborate.log" 
